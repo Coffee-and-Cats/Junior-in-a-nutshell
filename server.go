@@ -10,7 +10,7 @@ func main() {
 	http.Handle("/", fs)
 
 	log.Println("Servidor funcionando! Porta :5000...")
-	err := http.ListenAndServe(":5000", nil)
+	err := http.ListenAndServe(":8000", nil)
 	if err != nil {
 		log.Fatal(err)
 	}
