@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	fs := http.FileServer(http.Dir("./pages"))
+	fs := http.FileServer(http.Dir("../pages"))
 	http.Handle("/", fs)
 
 	log.Println("Servidor funcionando! Porta :8000...")
