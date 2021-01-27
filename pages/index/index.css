@@ -13,7 +13,6 @@ h1{
 
 h2 {
     padding: 2rem;
-    width: 50%;
     float: left;
     font-size: 2rem;
 }
@@ -23,17 +22,32 @@ h2, h3 {
 }
 
 header {
-    width: 100%; height: 100vh;
-    background-attachment: fixed; background-size: cover;
-    background-image: url(./roses.jpg);
+    background-color: rgb(120, 7, 7);
+}
 
-    box-shadow: inset 0 0 16rem 2rem rgba(185, 16, 16, 0.5);
+/* Imagem de fundo e blur */
+.glass {
+    width: 100%; height: 98vh;
+
+    background-image: url(./roses.jpg);
+    overflow: hidden;
+
+    background-color:rgb(120, 7, 7);
+    background-attachment: fixed; background-size: cover;
+
+    filter: blur(0.2rem); box-shadow: inset 0 0 12rem 0.8rem rgba(120, 7, 7, 0.5);
+}
+
+/* Título do container centralizado */
+#titleContainer {
+    width: 100%; height: 100%;
+    position: absolute; top: 0;
 
     display: flex; align-items: center; justify-content: center;
 }
 
 main {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .developers {
@@ -46,6 +60,13 @@ main {
     
     display: flex; flex-direction: row;
     background: rgb(185, 16, 16); border-radius: 3rem 0 0 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .dev {
+        padding-right: 0.4rem;
+        padding: 0.2rem;
+    }
 }
 
 address{
