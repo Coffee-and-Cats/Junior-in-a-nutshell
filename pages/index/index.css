@@ -10,6 +10,7 @@ h1{
     font-size: min(3rem, 12vw);
     color: white;
     margin-top: -4rem;
+    text-align: center;
 }
 
 h2 {
