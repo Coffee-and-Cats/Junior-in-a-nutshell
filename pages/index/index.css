@@ -11,6 +11,11 @@ h1{
     color: white;
     margin-top: -4rem;
     text-align: center;
+
+    border: .3rem solid white; border-radius: .2rem;
+    padding: 2.4rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(.2rem);
 }
 
 h2 {
