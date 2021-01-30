@@ -9,14 +9,10 @@ h1{
     font-family: 'Coda Caption', sans-serif;
     font-size: min(3rem, 12vw);
     color: white;
-    margin-top: -4rem;
     text-align: center;
 
-    border: .3rem solid white; border-radius: .2rem;
-    margin: 1rem;
+    margin: 3rem;
     padding: 2.4rem;
-    background-color: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(.2rem);
 }
 
 h2 {
@@ -31,6 +27,8 @@ h2, h3 {
 
 header {
     background-color: rgb(120, 7, 7);
+
+    box-shadow: 0 0 1rem .1rem rgba(0, 0, 0, 1);
 }
 
 /* Imagem de fundo e blur */
@@ -43,7 +41,7 @@ header {
     -webkit-background-size: cover; /* Por que não, né? */
 
     background-attachment: fixed; background-size: cover;
-    filter: blur(0.2rem);
+    filter: blur(0.3rem);
 }
 
 /* lightweight */
@@ -76,6 +74,8 @@ header {
     width: 100%; height: 100%;
     position: absolute; top: 0;
 
+    background-color: rgba(120, 7, 7, .2);
+
     display: flex; align-items: center; justify-content: center;
 }
 
@@ -90,6 +90,8 @@ main {
 .dev {
     padding: 0.4rem;
     padding-right: min(6rem, 15vw);
+    margin: 12rem 0; margin-left: .4rem;
+    box-shadow: 0 .4rem 0 0 rgb(120, 7, 7);
     
     display: flex; flex-direction: row;
     background: rgb(185, 16, 16); border-radius: 3rem 0 0 3rem;
@@ -100,11 +102,6 @@ main {
         padding-right: 0.4rem;
         padding: 0.2rem;
     }
-}
-
-address{
-    margin: 12rem 0; margin-left: .4rem;
-    box-shadow: 0 .4rem 0 0 rgb(120, 7, 7);
 }
 
 h3 {
