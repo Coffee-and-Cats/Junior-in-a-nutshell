@@ -13,6 +13,7 @@ h1{
     text-align: center;
 
     border: .3rem solid white; border-radius: .2rem;
+    margin: 1rem;
     padding: 2.4rem;
     background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(.2rem);
