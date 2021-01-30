@@ -83,8 +83,22 @@ main {
     min-height: 100vh;
 }
 
-.developers {
-    float: right;
+#developers {
+    width: min(80vw, 50rem); margin: auto;
+    margin-top: 6rem; margin-bottom: 6rem;
+    min-height: 100vh;
+
+    border-radius: 2rem;
+
+    background-color: rgba(120, 120, 120, .05);
+    box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 600px) {
+    #developers {
+        width: 98vw; margin: auto;
+        margin-top: 4rem; margin-bottom: 4rem;
+    }
 }
 
 .dev {
@@ -92,6 +106,7 @@ main {
     padding-right: min(6rem, 15vw);
     margin: 12rem 0; margin-left: .4rem;
     box-shadow: 0 .4rem 0 0 rgb(120, 7, 7);
+    float: right;
     
     display: flex; flex-direction: row;
     background: rgb(185, 16, 16); border-radius: 3rem 0 0 3rem;
@@ -101,6 +116,8 @@ main {
     .dev {
         padding-right: 0.4rem;
         padding: 0.2rem;
+
+        margin-top: 4rem;
     }
 }
 
