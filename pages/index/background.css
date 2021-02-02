@@ -1,0 +1,19 @@
+.glass {
+    background: rgb(120, 7, 7) url(./roses/roses_mobile.webp) no-repeat center;
+}
+
+@media only screen and (min-device-width: 1000px) { /*todo dispositivo com 1k+, vai usar a imagem de 1k*/
+    .glass {
+        background: rgb(120, 7, 7) url(./roses/roses_1k.webp) no-repeat center;
+        background-attachment: fixed; background-size: cover;
+    }}
+@media only screen and (min-device-width: 1300px) { /*todo dispositivo com 1,3k, incluindo quadhd, vai usar a img de 2k*/
+    .glass {
+        background: rgb(120, 7, 7) url(./roses/roses_2k.webp) no-repeat center;
+        background-attachment: fixed; background-size: cover;
+    }}
+@media only screen and (min-device-width: 2100px) { /*dispositivos com mais de 2k vai usar a img de 3k*/
+    .glass {
+        background: rgb(120, 7, 7) url(./roses/roses_4k.webp) no-repeat center;
+        background-attachment: fixed; background-size: cover;
+    }}
