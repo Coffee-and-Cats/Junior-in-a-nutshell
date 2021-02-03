@@ -88,7 +88,7 @@ body {
 .dev {
     padding: 0.4rem;
     padding-right: min(6rem, 15vw);
-    margin: 12rem 0; margin-left: .4rem;
+    margin: 12rem 0 1rem 12rem; margin-left: .4rem;
     box-shadow: 0 .4rem 0 0 rgb(120, 7, 7);
     float: right;
     
@@ -121,6 +121,35 @@ h3 {
     image-rendering: pixelated;
 }
 
+/*contacts*/
+.contacts {
+    float: right; 
+    margin: 4rem; margin-top: 0;
+    display: flex; flex-direction: row;
+}
+@media only screen and (max-width: 600px) {
+    .contacts {
+        margin: 0;
+    }
+    .contacts a {
+        margin: 1.3rem;
+    }
+}
+
+.contacts a {
+    overflow: hidden;
+    background-color: rgb(60, 60, 150);
+
+    margin: .8rem;
+    border: none;
+    border-radius: 100%;
+}
+
+.contacts a img {
+    width: 3rem; height: 3rem;
+}
+
+/* Footer*/
 footer p {
     bottom: 0px;
     padding: 2rem;
