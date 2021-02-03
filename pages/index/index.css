@@ -139,6 +139,7 @@ h3 {
 .contacts a {
     overflow: hidden;
     background-color: rgb(60, 60, 150);
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
 
     margin: .8rem;
     border: none;
@@ -146,13 +147,14 @@ h3 {
 
     display: flex; align-items: center; justify-content: center;
 }
+.contacts a:hover {
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, .2);
+}
 
 .contacts a img {
     width: 2.7rem; height: 2.7rem;
-
-    box-shadow: 567;
-
 }
+
 .contacts a:hover {
     background-color: rgb(20, 20, 100);
 }
