@@ -159,6 +159,33 @@ h3 {
     background-color: rgb(20, 20, 100);
 }
 
+#projects{
+    display: inline-block;
+    float: none;
+
+    min-height: 50vh;
+    margin-left: 24vw;
+}
+@media only screen and (max-width: 600px) {
+    #projects{
+        margin-left: .5rem;
+    }
+}
+
+#projects ul {
+    margin-top: 6rem;
+}
+#projects ul li,
+#projects ul li a {
+    background-color: rgb(120, 7, 7);
+    color: white;
+}
+#projects ul li{
+    padding: .6rem;
+    margin: .2rem;
+    border-radius: .3rem;
+}
+
 /* Footer*/
 footer p {
     bottom: 0px;

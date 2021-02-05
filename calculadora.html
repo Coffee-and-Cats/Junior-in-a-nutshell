@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Maneira</title>
+
+    <link rel="stylesheet" href="./public/calculadora/styles.css">
+</head>
+<body>
+
+    <section id="calculadora">
+    <input id="valor" type="number">
+    <div id="numeros">
+        <button onClick="add(9)">9</button>
+        <button onClick="add(8)">8</button>
+        <button onClick="add(7)">7</button>
+        <button onClick="add(6)">6</button>
+        <button onClick="add(5)">5</button>
+        <button onClick="add(4)">4</button>
+        <button onClick="add(3)">3</button>
+        <button onClick="add(2)">2</button>
+        <button onClick="add(1)">1</button>
+        <button onClick="add(0)">0</button>
+    </div>
+
+    <div id="laterais">
+        <button class="lateral" onClick="operacao('+')">+</button>
+        <button class="lateral" onClick="operacao('-')">-</button>
+        <button class="lateral" onClick="operacao('x')">x</button>
+        <button class="lateral" onClick="operacao('/')">÷</button>
+
+        <button id="igual" onClick="executa()">=</button>
+    </div>
+
+    </section>
+
+</body>
+
+<script src="./public/calculadora/calc.js"></script>
+<!-- Ponto final -->
+</html>

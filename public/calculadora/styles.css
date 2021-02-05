@@ -1,0 +1,55 @@
+*{
+    padding: 0; /* Preenchimento */
+    margin: 0; /* Margem */
+    border: none;
+    box-sizing: border-box; /*faz o css entender os objetos melhor */
+}
+
+body{
+    background: #daf1ff;
+    min-height: 100vh;
+
+    display: flex; 
+    justify-content: center; align-items: center;
+}
+
+button{
+    width: 3rem;
+    height: 3rem;
+    padding: 0.5rem;
+    margin: 3px;
+    background: #792c3b;
+    color: white;
+    font-size: 1.4rem;
+}
+
+#numeros{
+    width: 11rem; height: 13.7rem;
+    text-align: center;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex; flex-wrap: wrap; /*faz a quebra de linha usando o flex*/
+
+    justify-content: center; /*usa-se com o flex para centralizar coisas */
+}
+
+#calculadora {
+    display: flex; /*faz algumas coisas ficarem lado a lado*/
+    flex-wrap: wrap; /*faz a quebra de linha*/
+
+    width: 14.5rem; /*largura*/
+}
+
+#valor {
+    height: 2.4rem; /*altura*/
+    width: 100%; /*100% pega todo o espaço disponível*/
+    padding: .4rem;
+}
+
+.lateral {
+    float: right;
+}
+
+#laterais {
+    width: 3.4rem;
+}
