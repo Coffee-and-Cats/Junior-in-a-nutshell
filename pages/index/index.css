@@ -5,9 +5,28 @@
     font-family: sans-serif;
 }
 
+@font-face {
+    font-family: "title";
+    src: url("./texts/hansief-webfont.woff") format("woff"),
+         url("./texts/hansief-webfont.woff2") format("woff2");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "text";
+    src: url("./texts/BwModelica-Medium.woff") format("woff"),
+         url("./texts/BwModelica-Medium.woff2") format("woff2");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "names";
+    src: url("./texts/redwing-webfont.woff") format("woff"),
+         url("./texts/redwing-webfont.woff2") format("woff2");
+    font-weight: 500;
+}
+
 h1{
-    font-family: 'Coda Caption', sans-serif;
-    font-size: min(3rem, 12vw);
+    font-family: 'title', fantasy;
+    font-size: min(4rem, 18vw);
     color: white;
     text-align: center;
 
@@ -18,11 +37,12 @@ h1{
 h2 {
     padding: 2rem;
     float: left;
-    font-size: 2rem;
+    font-size: 1.4rem;
+    font-family: "text", sans-serif;
 }
 
-h2, h3 {
-    font-family: "Yanone Kaffeesatz";
+h3 {
+    font-family: "title", sans-serif;
 }
 
 header {
@@ -59,6 +79,7 @@ header {
     background-color: rgba(120, 7, 7, .27);
 
     display: flex; align-items: center; justify-content: center;
+    flex-direction: column;
 }
 
 body {
@@ -70,7 +91,7 @@ body {
     margin-top: 6rem; margin-bottom: 6rem;
     min-height: 100vh;
 
-    border-radius: 2rem;
+    border-radius: 2.5rem;
 
     background-color: rgba(120, 120, 120, .05);
     box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.2);
@@ -86,14 +107,14 @@ body {
 }
 
 .dev {
-    padding: 0.4rem;
+    padding: 0.2rem; padding-bottom: .6rem;
     padding-right: min(6rem, 15vw);
     margin: 12rem 0 1rem 12rem; margin-left: .4rem;
     box-shadow: 0 .4rem 0 0 rgb(120, 7, 7);
     float: right;
     
     display: flex; flex-direction: row;
-    background: rgb(185, 16, 16); border-radius: 3rem 0 0 3rem;
+    background: rgb(185, 16, 16); border-radius: 1rem 0 0 1rem;
 }
 
 @media only screen and (max-width: 600px) {
@@ -110,13 +131,12 @@ h3 {
     margin-bottom: -0.2rem;
 
     color: white; font-style: normal;
-    font-family: "Yanone Kaffeesatz"; font-size: 1.8rem;
 }
 
 .avatar{
     width: 8rem;
     height: 8rem;
-    margin-top: -5.2rem;
+    margin-top: -5.6rem;
 
     image-rendering: pixelated;
 }
@@ -146,17 +166,18 @@ h3 {
     border-radius: 100%;
 
     display: flex; align-items: center; justify-content: center;
+
+    transition: border-radius .3s, background-color .8s;
 }
 .contacts a:hover {
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, .2);
+    background-color: rgb(20, 20, 100);
+
+    border-radius: .4rem;
 }
 
 .contacts a img {
     width: 2.7rem; height: 2.7rem;
-}
-
-.contacts a:hover {
-    background-color: rgb(20, 20, 100);
 }
 
 #projects{
@@ -190,7 +211,7 @@ h3 {
 footer p {
     bottom: 0px;
     padding: 2rem;
-    font-family: "Yanone Kaffeesatz"; font-size: 2rem;
+    font-family: "names"; font-size: 2rem;
     margin:auto;
     width: 70%; text-align: center;
 }
