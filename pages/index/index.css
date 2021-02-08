@@ -18,7 +18,7 @@
     font-weight: 500;
 }
 @font-face {
-    font-family: "names";
+    font-family: "footer";
     src: url("./texts/redwing-webfont.woff") format("woff"),
          url("./texts/redwing-webfont.woff2") format("woff2");
     font-weight: 500;
@@ -211,7 +211,7 @@ h3 {
 footer p {
     bottom: 0px;
     padding: 2rem;
-    font-family: "names"; font-size: 2rem;
+    font-family: "footer"; font-size: 2rem;
     margin:auto;
     width: 70%; text-align: center;
 }
