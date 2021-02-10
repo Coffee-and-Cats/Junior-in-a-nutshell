@@ -180,31 +180,48 @@ h3 {
     width: 2.7rem; height: 2.7rem;
 }
 
-#projects{
-    display: inline-block;
+/* projects */
+
+#projects h2{
     float: none;
 
-    min-height: 50vh;
-    margin-left: 24vw;
-}
-@media only screen and (max-width: 600px) {
-    #projects{
-        margin-left: .5rem;
-    }
+    margin: auto; margin-left: 4rem;
 }
 
-#projects ul {
-    margin-top: 6rem;
+#project-container {
+    width: 80vw;
+    margin: auto;
 }
-#projects ul li,
-#projects ul li a {
+
+#project-container ul {
+    display: flex; flex-direction: row; flex-wrap: wrap;
+}
+
+#project-container li {
+    width: 10rem; height: 14rem;
+    align-items: flex-start; justify-content: flex-end;
+
+    display: flex; flex-direction: column;
     background-color: rgb(120, 7, 7);
-    color: white;
+    box-shadow: 0 .4rem 0 0 rgb(80, 0, 0);
+    border-radius: 1rem;
+    
+    margin-right: 2rem; margin-bottom: 4rem;
 }
-#projects ul li{
-    padding: .6rem;
-    margin: .2rem;
-    border-radius: .3rem;
+
+#project-container li *{
+    color: white;
+
+    margin: .5rem; padding: .5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    #project-container li * {
+        margin: .2rem;
+    }
+    #project-container li {
+        height: 10rem;
+    }
 }
 
 /* Footer*/
