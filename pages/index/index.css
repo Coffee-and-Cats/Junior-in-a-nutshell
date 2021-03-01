@@ -95,8 +95,6 @@ body {
 
     background-color: rgba(120, 120, 120, .05);
     box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.2);
-
-    overflow: hidden;
 }
 
 @media only screen and (max-width: 600px) {
@@ -109,7 +107,7 @@ body {
 .dev {
     padding: 0.2rem; padding-bottom: .6rem;
     padding-right: min(6rem, 15vw);
-    margin: 12rem 0 1rem 12rem; margin-left: .4rem;
+    margin: 10rem 0 1rem 20rem; margin-left: .4rem;
     box-shadow: 0 .4rem 0 0 rgb(120, 7, 7);
     float: right;
     
@@ -117,7 +115,7 @@ body {
     background: rgb(185, 16, 16); border-radius: 1rem 0 0 1rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
     .dev {
         padding-right: 0.4rem;
         padding: 0.2rem;
@@ -137,19 +135,27 @@ h3 {
     width: 8rem;
     height: 8rem;
     margin-top: -5.6rem;
+}
 
-    image-rendering: pixelated;
+.avatar#searchingForOthers {
+    width: 6.5rem;
+    height: 6.5rem;
+    margin-top: -4.6rem;
 }
 
 /*contacts*/
 .contacts {
     float: right; 
-    margin: 4rem; margin-top: 0;
-    display: flex; flex-direction: row;
+    margin: 0 2rem 0 2rem; margin-top: 0;
+    display: flex; align-items: center; justify-content: flex-end;
+    flex-direction: row;
+    width: 80%;
+    
+    margin-left: auto;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
     .contacts {
-        margin: 0;
+        margin: 0 1rem 1.4rem 1rem;
     }
     .contacts a {
         margin: 1.3rem;
@@ -207,8 +213,15 @@ h3 {
     
     margin-right: 2rem; margin-bottom: 4rem;
 }
+@media only screen and (max-width: 1000px) {
+    #project-container li {
+        width: 90vw;
+        margin: auto; margin-bottom: 1.2rem;
+    }
+}
 
-#project-container li *{
+#project-container li *,
+#project-container li{
     color: white;
 
     margin: .5rem; padding: .5rem;
@@ -228,8 +241,19 @@ footer p {
     bottom: 0px;
     padding: 2rem;
     font-family: "footer"; font-size: 2rem;
-    margin:auto;
+
     width: 70%; text-align: center;
+    margin: auto;
+}
+
+@media (max-width: 1000px) {
+    footer p {
+        bottom: 0px;
+        padding: 1.2rem;
+        font-family: "footer"; font-size: 1.5rem;
+        margin: auto;
+        width: 90%; text-align: center;
+    }
 }
 
 .space{
