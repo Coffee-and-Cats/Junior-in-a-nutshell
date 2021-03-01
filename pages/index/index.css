@@ -83,7 +83,7 @@ header {
 }
 
 body {
-    background-image: linear-gradient(to bottom right, rgb(250, 250, 255), rgb(243, 243, 255));
+    background-image: linear-gradient(to bottom right, rgb(200, 200, 215), rgb(213, 213, 230));
 }
 
 #developers {
@@ -93,7 +93,7 @@ body {
 
     border-radius: 2.5rem;
 
-    background-color: rgba(120, 120, 120, .05);
+    background-color: rgba(250, 250, 250, .1);
     box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.2);
 }
 
